@@ -20,9 +20,10 @@ def menu():
     screen += "*                                           *\n"
     screen += "*     1) Story One                          *\n"
     screen += "*     2) Story Two                          *\n"
-    screen += "*     3) Story Three     !                 *\n"
+    screen += "*     3) Story Three                        *\n"
     screen += "*                                           *\n"
     screen += "*     Q) Quit                               *\n"
     screen += "*                                           *\n"
     screen += "*                                           *\n"
     screen += "*********************************************\n"
+    return screen
