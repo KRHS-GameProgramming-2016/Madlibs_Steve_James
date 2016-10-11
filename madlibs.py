@@ -14,7 +14,8 @@ def madlibs():
             end = True
         elif option == "1":
             print story1.story()
-    
+        elif option == "3":
+            print story3.story()
 
 
 madlibs()
