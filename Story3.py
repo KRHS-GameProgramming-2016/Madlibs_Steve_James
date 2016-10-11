@@ -1,4 +1,8 @@
-def Story2():
+from input import *
+
+#By James_Gachelin
+
+def story():
     Name1 = getWord("Enter a name ")
     
     text = " "
