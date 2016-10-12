@@ -1,6 +1,38 @@
 def isSwear(word):
     swearList = ["poop",
-                 "pee"]
+                 "pee",
+                 "cunt",
+                 "bitch",
+                 "fuck",
+                 "slut",
+                 "penis",
+                 "dick",
+                 "phallus",
+                 "pussy",
+                 "vagina",
+                 "phuck",
+                 "sloot",
+                 "rape",
+                 "dick", 
+                 "shit",
+                 "cock",
+                 "cok",
+                 "wanker",
+                 "ass",
+                 "blow",
+                 "boner",
+                 "bollox",
+                 "bullshit",
+                 "butt",
+                 "clit",
+                 "cooner",
+                 "cum",
+                 "dumbass",
+                 "fag",
+                 "faggot",
+                 "gay",
+                 "69",
+                 "connar"]
     if word in swearList:
         return True
     else:
@@ -24,12 +56,34 @@ def getWord(prompt):
     goodInput = False
     while not goodInput:
         response = raw_input(prompt)
+        for c in response:
+            if c != " ":
+                goodInput = True
+        if not goodInput:
+            print "you need something more then just spaces!" 
+        elif isSwear(response):
+            goodInput = False
+            print "U WOT M8? "
+        elif len(response) == 0:    #never hit!
+            goodInput = False
+            print "Type something!!"
+        
+            
+    return response
+        
+        
+        
+def getMagic(prompt):
+    goodInput = False
+    while not goodInput:
+        response = raw_input(prompt)
         goodInput = True
         if isSwear(response):
             goodInput = False
             print "U WOT M8? "
-            getWord(prompt)
+            getMagic(prompt)
         return response
+    
 
 def getNumber(prompt):
     goodInput = False
