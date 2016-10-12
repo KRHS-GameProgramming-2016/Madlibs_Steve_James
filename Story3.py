@@ -1,8 +1,8 @@
-from imput import *
+from input import *
 
 #By James_Gachelin
 
-def Story():
+def story():
     Name1 = getWord("Enter a name ")
     
     text = " "

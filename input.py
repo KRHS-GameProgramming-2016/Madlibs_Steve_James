@@ -27,7 +27,8 @@ def getWord(prompt):
         goodInput = True
         if isSwear(response):
             goodInput = False
-            print "Don't use that kind of language with me!"
+            print "U WOT M8? "
+            getWord(prompt)
         return response
 
 def getNumber(prompt):
@@ -41,24 +42,3 @@ def getNumber(prompt):
                 goodInput = False
                 print "Numbers only please!"
     return response
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
