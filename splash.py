@@ -1,6 +1,6 @@
 def splash():
     screen = ""
-    screen += "*********************************************\n"
+    screen += "/*******************************************\\\n"
     screen += "*                                           *\n"
     screen += "*                                           *\n"
     screen += "*                  Welcome                  *\n"
@@ -10,7 +10,7 @@ def splash():
     screen += "*     By Steven Rayno & James Gachelin      *\n"
     screen += "*           Press Enter to continue         *\n"
     screen += "*                                           *\n"
-    screen += "*********************************************\n"
+    screen += "\\*******************************************/\n"
     return screen
     
 def menu():
