@@ -5,12 +5,13 @@ from input import *
 def story():
     Name1 = getWord("Enter a Name! ")
     Mythical1 = getWord("Enter a Mythical Beast! ")
-    Weapon1 = getWord("Enter a Medival Weapon! ")
+    Weapon1 = getWeapon("Enter a Medival Weapon! ")
     Name2 = getWord("Enter another Name! ")
     Spell1 = getMagic("Enter a Projectile! ")
     Year1 = getAmount("Enter a Number! ")
     Nightmare1 = getWord("Enter a scary object! ")
     Money1 = getAmount("Enter an amount! ")
+    Name3 = getWord("Enter a malicious name! ")
     
     text = " "
     text += "Once apon a time " + Name1
@@ -29,5 +30,6 @@ def story():
     text += " Went to the bar to drink his problems away. "
     text += " After spending his " + Money1
     text += " dollars at the bar, " + Name2
-    text += " Wobbled away from the bar, drunk out of his mind. "
+    text += " Wobbled away from the bar, drunk out of his mind. " + Name2
+    text += " Went back to his master, " + Name3
     return text

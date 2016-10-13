@@ -33,11 +33,37 @@ def isSwear(word):
                  "gay",
                  "69",
                  "34",
+                 "james",
                  "connar"]
     if word in swearList:
         return True
     else:
         return False
+        
+        
+        
+def isWeapon(word)
+    weaponList = ["sword",
+                  "axe",
+                  "ax", 
+                  "bow",
+                  "flail",
+                  "mace",
+                  "longsword",
+                  "shortsword",
+                  "battleax",
+                  "battleaxe",
+                  "polearm",
+                  "billhook",
+                  "caltrop"
+                  "halberd",
+                  "crossbow",
+                  "pike",
+                  "poleax",
+                  "paleaxe",
+                  "quarterstaff",
+                  "spear",
+                  "war hammer"]
 
 def getMenuOption():
     goodInput = False
@@ -72,29 +98,20 @@ def getWord(prompt):
             
     return response
         
-        
-        
-def getMagic(prompt):
+def getWeapon(prompt):
     goodInput = False
     while not goodInput:
         response = raw_input(prompt)
         goodInput = True
-        if isSwear(response):
-            goodInput = False
-            print "U WOT M8? "
-            getMagic(prompt)
-        return response
+        for character in response:
+            if character not in isWeapon:
+                goodInput = False
+                print "Medivial Weapons only plz!"
+    return response
+            
+            
         
-def getAmount(prompt):
-    goodInput = False
-    while not goodInput:
-        response = raw_input(prompt)
-        goodInput = True
-        if isSwear(response):
-            goodInput = False
-            print "U WOT M8? "
-            getAmount(prompt)
-        return response
+
     
 
 def getNumber(prompt):
