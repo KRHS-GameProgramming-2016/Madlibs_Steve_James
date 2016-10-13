@@ -32,6 +32,7 @@ def isSwear(word):
                  "faggot",
                  "gay",
                  "69",
+                 "34",
                  "connar"]
     if word in swearList:
         return True
@@ -82,6 +83,17 @@ def getMagic(prompt):
             goodInput = False
             print "U WOT M8? "
             getMagic(prompt)
+        return response
+        
+def getAmount(prompt):
+    goodInput = False
+    while not goodInput:
+        response = raw_input(prompt)
+        goodInput = True
+        if isSwear(response):
+            goodInput = False
+            print "U WOT M8? "
+            getAmount(prompt)
         return response
     
 
