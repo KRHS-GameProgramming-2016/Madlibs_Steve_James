@@ -33,7 +33,6 @@ def isSwear(word):
                  "gay",
                  "69",
                  "34",
-                 "james",
                  "connar"]
     if word in swearList:
         return True
@@ -47,6 +46,7 @@ def getMenuOption():
     goodResponses = ["1",
                      "2",
                      "3",
+                     "c",
                      "q"]
     while not goodInput:
         response = raw_input("Make a selection: ")
@@ -74,14 +74,6 @@ def getWord(prompt):
         
             
     return response
-
-
-
-
-
-
-
-
 
 
 
