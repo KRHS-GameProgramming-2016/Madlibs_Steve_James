@@ -93,6 +93,8 @@ def getWeapon(prompt):
 
 
 
+
+
 def getNumber(prompt):
     goodInput = False
     numbers = "0123456789."

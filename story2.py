@@ -13,6 +13,8 @@ def story():
     Money1 = getNumber("Enter an amount! ")
     Name3 = getWord("Enter a malicious name! ")
     Year2 = getNumber("Enetr a Number plz! ")
+    Spell2 = getWord("Enter a magical spell! ")
+    Verb1 = getVerb("Enter a verb! ")
     
     text = " "
     text += "Once apon a time " + Name1
@@ -37,5 +39,10 @@ def story():
     text += " made a dramtic entrance before shooting " + Name2
     text += " and " + Name3
     text += " to space for " + Year2
-    text += " years."
+    text += " years with a " + Spell2
+    text += " . After " + Name1
+    text += " defeated " + Name2
+    text += " and " + Name3
+    text += ". " + Name1
+    text += " Went to the local bar and sat down before being " + Verb1
     return text
