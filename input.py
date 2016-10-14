@@ -40,30 +40,7 @@ def isSwear(word):
     else:
         return False
         
-        
-        
-def isWeapon(word)
-    weaponList = ["sword",
-                  "axe",
-                  "ax", 
-                  "bow",
-                  "flail",
-                  "mace",
-                  "longsword",
-                  "shortsword",
-                  "battleax",
-                  "battleaxe",
-                  "polearm",
-                  "billhook",
-                  "caltrop"
-                  "halberd",
-                  "crossbow",
-                  "pike",
-                  "poleax",
-                  "paleaxe",
-                  "quarterstaff",
-                  "spear",
-                  "war hammer"]
+
 
 def getMenuOption():
     goodInput = False
@@ -97,22 +74,24 @@ def getWord(prompt):
         
             
     return response
-        
+
+
+
 def getWeapon(prompt):
     goodInput = False
+    weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer"
     while not goodInput:
         response = raw_input(prompt)
         goodInput = True
         for character in response:
-            if character not in isWeapon:
+            if character not in weapon:
                 goodInput = False
-                print "Medivial Weapons only plz!"
+                print "medival weapon only please!"
     return response
-            
-            
-        
 
-    
+
+
+
 
 def getNumber(prompt):
     goodInput = False

@@ -7,11 +7,12 @@ def story():
     Mythical1 = getWord("Enter a Mythical Beast! ")
     Weapon1 = getWeapon("Enter a Medival Weapon! ")
     Name2 = getWord("Enter another Name! ")
-    Spell1 = getMagic("Enter a Projectile! ")
-    Year1 = getAmount("Enter a Number! ")
+    Spell1 = getWord("Enter a Projectile! ")
+    Year1 = getNumber("Enter a Number! ")
     Nightmare1 = getWord("Enter a scary object! ")
-    Money1 = getAmount("Enter an amount! ")
+    Money1 = getNumber("Enter an amount! ")
     Name3 = getWord("Enter a malicious name! ")
+    Year2 = getNumber("Enetr a Number plz! ")
     
     text = " "
     text += "Once apon a time " + Name1
@@ -31,5 +32,10 @@ def story():
     text += " After spending his " + Money1
     text += " dollars at the bar, " + Name2
     text += " Wobbled away from the bar, drunk out of his mind. " + Name2
-    text += " Went back to his master, " + Name3
+    text += " Went back to his master, Sir " + Name3
+    text += " Before " + Name1
+    text += " made a dramtic entrance before shooting " + Name2
+    text += " and " + Name3
+    text += " to space for " + Year2
+    text += " years."
     return text
