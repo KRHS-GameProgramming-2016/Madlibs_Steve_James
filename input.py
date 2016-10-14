@@ -77,6 +77,14 @@ def getWord(prompt):
 
 
 
+
+
+
+
+
+
+
+
 def getWeapon(prompt):
     goodInput = False
     weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer"
