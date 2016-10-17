@@ -13,8 +13,6 @@ def madlibs():
         option = getMenuOption()
         if option == "q ": 
             end = True
-        elif option == "c":
-            print cheat()
         elif option == "1 ":
             print story1.story()
         elif option == "2":

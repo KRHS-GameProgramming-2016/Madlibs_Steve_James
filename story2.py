@@ -14,7 +14,7 @@ def story():
     Name3 = getWord("Enter a malicious name! ")
     Year2 = getNumber("Enetr a Number plz! ")
     Spell2 = getWord("Enter a magical spell! ")
-    Verb1 = getVerb("Enter a verb! ")
+    Object1 = getWord("Enter a(n) nonplural object! ")
     
     text = " "
     text += "Once apon a time " + Name1
@@ -44,5 +44,5 @@ def story():
     text += " defeated " + Name2
     text += " and " + Name3
     text += ". " + Name1
-    text += " Went to the local bar and sat down before being " + Verb1
+    text += " Went to the local bar and sat down before being hit by a " + Object1
     return text
