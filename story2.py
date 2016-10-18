@@ -45,4 +45,5 @@ def story():
     text += " and " + Name3
     text += ". " + Name1
     text += " Went to the local bar and sat down before being hit by a " + Object1
+    text += " and everyone lived happily ever after."
     return text

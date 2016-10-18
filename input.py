@@ -33,6 +33,7 @@ def isSwear(word):
                  "gay",
                  "69",
                  "34",
+                 "piss",
                  "connar"]
     if word in swearList:
         return True
@@ -79,18 +80,28 @@ def getWord(prompt):
 
 def getWeapon(prompt):
     goodInput = False
-    weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer"
+    weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer "
     while not goodInput:
         response = raw_input(prompt)
         goodInput = True
         for character in response:
             if character not in weapon:
                 goodInput = False
-                print "medival weapon only please!"
+                print "Medival Weapon only please!"
     return response
 
 
-
+def getCode(prompt):
+    goodInput = False
+    code = "ilovememes"
+    while not goodInput:
+        response = raw_input(prompt)
+        goodInput = True
+        for character in response:
+            if character not in code:
+                goodInput = False
+                print "ERROR. CODE INCORRECT!!!"
+    return response
 
 
 
