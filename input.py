@@ -81,17 +81,35 @@ def getWord(prompt):
 #By Steven_Rayno2020
 def getWeapon(prompt):
     goodInput = False
-    weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer."
+    weapons = ["sword",
+               "axe",
+               "ax",
+               "bow",
+               "spear",
+               "flail",
+               "mace",
+               "shortsword",
+               "longsword",
+               "battleaxe",
+               "battleax",
+               "polearm",
+               "billhook",
+               "caltrop",
+               "halberd",
+               "crossbow",
+               "pike",
+               "poleax",
+               "poleaxe",
+               "quarterstaff",
+               "spear",
+               "warhammer"]
     while not goodInput:
         response = raw_input(prompt)
         goodInput = True
-        for character in response:
-            if character not in weapon:
-                goodInput = False
-                print "Medival Weapon only please!"
-            elif isSwear(response):
-                goodInput = False
-                print "TRIGGERED1!!11!1 "
+        if response not in weapons:
+            goodInput = False
+            print "Medival Weapon only please!"
+            
     return response
 
 
