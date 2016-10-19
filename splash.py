@@ -27,21 +27,3 @@ def menu():
     screen += "*                                           *\n"
     screen += "\\******************************************/\n"
     return screen
-    
-def cheat():
-    screen = ""
-    screen = "/*********************************************\\\n"
-    screen = "*                                              *\n"
-    screen = "*                   SECRET                     *\n"
-    screen = "*                    CODE                      *\n"
-    screen = "*                                              *\n"
-    screen = "*               INSERT PASSWORD                *\n"
-    screen = "*                 __________                   *\n"
-    screen = "*                                              *\n"
-    screen = "*                                              *\n"
-    screen = "*                                              *\n"
-    screen = "*                                              *\n"
-    screen = "*                                              *\n"
-    screen = "*                                              *\n"
-    screen = "\\*******************************************/\n*"
-    return screen

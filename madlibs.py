@@ -11,10 +11,11 @@ def madlibs():
     while not end:
         print menu()
         option = getMenuOption()
-        if option == "q": 
+        if option == "q":
+            print "Good Bye! "
             end = True
-        if option == "c":
-            print cheat()
+        elif option == "c":
+            pass
         elif option == "1":
             print story1.story()
         elif option == "2":

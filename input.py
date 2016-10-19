@@ -1,3 +1,4 @@
+#Improved by Steven_Rayno2020
 def isSwear(word):
     swearList = ["poop",
                  "pee",
@@ -68,7 +69,7 @@ def getWord(prompt):
             print "you need something more then just spaces!" 
         elif isSwear(response):
             goodInput = False
-            print "U WOT M8? "
+            print "TRIGGERED1!!11!1 "
         elif len(response) == 0:    #never hit!
             goodInput = False
             print "Type something!!"
@@ -77,10 +78,10 @@ def getWord(prompt):
     return response
 
 
-
+#By Steven_Rayno2020
 def getWeapon(prompt):
     goodInput = False
-    weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer "
+    weapon = "sword, axe, ax, bow, spear, flail, mace, shortsword, longsword, battleaxe, battleax, polearm, billhook, caltrop, halberd, crossbow, pike, poleax, poleaxe, quarterstaff, spear, warhammer."
     while not goodInput:
         response = raw_input(prompt)
         goodInput = True
@@ -88,22 +89,10 @@ def getWeapon(prompt):
             if character not in weapon:
                 goodInput = False
                 print "Medival Weapon only please!"
-    return response
-
-
-def getCode(prompt):
-    goodInput = False
-    code = "ilovememes"
-    while not goodInput:
-        response = raw_input(prompt)
-        goodInput = True
-        for character in response:
-            if character not in code:
+            elif isSwear(response):
                 goodInput = False
-                print "ERROR. CODE INCORRECT!!!"
+                print "TRIGGERED1!!11!1 "
     return response
-
-
 
 
 def getNumber(prompt):
@@ -116,4 +105,7 @@ def getNumber(prompt):
             if character not in numbers:
                 goodInput = False
                 print "Numbers only please!"
+            elif isSwear(response):
+                goodInput = False
+                print "TRIGGERED1!!11!1 "
     return response
