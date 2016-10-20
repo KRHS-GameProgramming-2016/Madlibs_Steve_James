@@ -1,6 +1,6 @@
 from input import *
 
-#By Steven_Rayno2020
+#Written Steven_Rayno2020
 
 def story(cheat):
     if cheat:

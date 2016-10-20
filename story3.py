@@ -1,6 +1,6 @@
 from input import *
 
-#By James_Gachelin
+#Written James_Gachelin
 
 def story():
     Name1 = getWord("Enter a name ")
