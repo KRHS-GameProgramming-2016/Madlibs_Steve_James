@@ -8,6 +8,7 @@ def madlibs():
     print splash()
     raw_input()
     end = False
+    cheat = False
     while not end:
         print menu()
         option = getMenuOption()
@@ -15,13 +16,17 @@ def madlibs():
             print "Good Bye! "
             end = True
         elif option == "c":
-            pass
+            if not cheat:
+                cheat = True
+                print "CHEAT ACTIVATED"
+            else:
+                cheat = False
+                print "CHEAT DEACTIVATED"
         elif option == "1":
             print story1.story()
         elif option == "2":
-            print story2.story()
+            print story2.story(cheat)
         elif option == "3":
             print story3.story()
-
 
 madlibs()

@@ -2,19 +2,34 @@ from input import *
 
 #By Steven_Rayno2020
 
-def story():
-    Name1 = getWord("Enter a Name! ")
-    Mythical1 = getWord("Enter a Mythical Beast! ")
-    Weapon1 = getWeapon("Enter a Medival Weapon! ")
-    Name2 = getWord("Enter another Name! ")
-    Spell1 = getWord("Enter a Projectile! ")
-    Year1 = getNumber("Enter a Number! ")
-    Nightmare1 = getWord("Enter a scary object! ")
-    Money1 = getNumber("Enter an amount! ")
-    Name3 = getWord("Enter a malicious name! ")
-    Year2 = getNumber("Enetr a Number plz! ")
-    Spell2 = getWord("Enter a magical spell! ")
-    Object1 = getWord("Enter a(n) nonplural object! ")
+def story(cheat):
+    if cheat:
+        Name1 = getSwear("Enter a Name! ")
+        Mythical1 = getSwear("Enter a Mythical Beast! ")
+        Weapon1 = getWeapon("Enter a Medival Weapon! ")
+        Name2 = getSwear("Enter another Name! ")
+        Spell1 = getSwear("Enter a Projectile! ")
+        Year1 = getNumber("Enter a Number! ")
+        Nightmare1 = getSwear("Enter a scary object! ")
+        Money1 = getNumber("Enter an amount! ")
+        Name3 = getSwear("Enter a malicious name! ")
+        Year2 = getNumber("Enetr a Number plz! ")
+        Spell2 = getSwear("Enter a magical spell! ")
+        Object1 = getSwear("Enter a(n) nonplural object! ")
+        
+    else:
+        Name1 = getWord("Enter a Name! ")
+        Mythical1 = getWord("Enter a Mythical Beast! ")
+        Weapon1 = getWeapon("Enter a Medival Weapon! ")
+        Name2 = getWord("Enter another Name! ")
+        Spell1 = getWord("Enter a Projectile! ")
+        Year1 = getNumber("Enter a Number! ")
+        Nightmare1 = getWord("Enter a scary object! ")
+        Money1 = getNumber("Enter an amount! ")
+        Name3 = getWord("Enter a malicious name! ")
+        Year2 = getNumber("Enetr a Number plz! ")
+        Spell2 = getWord("Enter a magical spell! ")
+        Object1 = getWord("Enter a(n) nonplural object! ")
     
     text = " "
     text += "Once apon a time " + Name1
@@ -40,7 +55,7 @@ def story():
     text += " and " + Name3
     text += " to space for " + Year2
     text += " years with a " + Spell2
-    text += " . After " + Name1
+    text += ". After " + Name1
     text += " defeated " + Name2
     text += " and " + Name3
     text += ". " + Name1

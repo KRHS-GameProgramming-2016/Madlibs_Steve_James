@@ -1,4 +1,4 @@
-#Improved by Steven_Rayno2020
+#Improved by Steven_Rayno2020, tested by Joe :D
 def isSwear(word):
     swearList = ["poop",
                  "pee",
@@ -59,13 +59,13 @@ def isSwear(word):
                  "vag",
                  "whore",
                  "wank",
+                 "sex",
+                 "sexy",
                  "connar"]
     if word in swearList:
         return True
     else:
         return False
-        
-
 
 def getMenuOption():
     goodInput = False
@@ -101,6 +101,23 @@ def getWord(prompt):
             
     return response
 
+#By Steven_Rayno2020
+def getSwear(prompt):
+    goodInput = False
+    while not goodInput:
+        response = raw_input(prompt)
+        for c in response:
+            if c != " ":
+                goodInput = True
+        if not goodInput:
+            print "you need something more then just spaces!" 
+        elif not isSwear(response):
+            goodInput = False
+            print "TRIGGERED1!!11!1 IT'S NOT SWEARY ENOUGH"
+        elif len(response) == 0:    #never hit!
+            goodInput = False
+            print "Type something!!"
+    return response
 
 #By Steven_Rayno2020
 def getWeapon(prompt):
@@ -135,7 +152,6 @@ def getWeapon(prompt):
             print "Medival Weapon only please!"
             
     return response
-
 
 def getNumber(prompt):
     goodInput = False
