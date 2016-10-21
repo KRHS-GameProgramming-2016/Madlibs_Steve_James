@@ -4,18 +4,18 @@ from input import *
 
 def story(cheat):
     if cheat:
-        Name1 = getSwear("Enter a Name! ")
-        Mythical1 = getSwear("Enter a Mythical Beast! ")
+        Name1 = getSwear("Enter a Swear! ")
+        Mythical1 = getSwear("Enter a Swear! ")
         Weapon1 = getWeapon("Enter a Medival Weapon! ")
-        Name2 = getSwear("Enter another Name! ")
-        Spell1 = getSwear("Enter a Projectile! ")
+        Name2 = getSwear("Enter another Swear! ")
+        Spell1 = getSwear("Enter a Swear! ")
         Year1 = getNumber("Enter a Number! ")
-        Nightmare1 = getSwear("Enter a scary object! ")
+        Nightmare1 = getSwear("Enter a Swear! ")
         Money1 = getNumber("Enter an amount! ")
-        Name3 = getSwear("Enter a malicious name! ")
+        Name3 = getSwear("Enter a malicious Swear! ")
         Year2 = getNumber("Enetr a Number plz! ")
-        Spell2 = getSwear("Enter a magical spell! ")
-        Object1 = getSwear("Enter a(n) nonplural object! ")
+        Spell2 = getSwear("Enter a magical Swear! ")
+        Object1 = getSwear("Enter a(n) nonplural Swear! ")
         
     else:
         Name1 = getWord("Enter a Name! ")
