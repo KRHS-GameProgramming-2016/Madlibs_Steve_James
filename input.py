@@ -1,4 +1,4 @@
-#Improved by Steven_Rayno2020, tested by Joe :D
+#Improved by Steven_Rayno2020, tested by Jpoltack :D
 def isSwear(word):
     swearList = ["poop",
                  "pee",
@@ -73,6 +73,10 @@ def getMenuOption():
                      "2",
                      "3",
                      "c",
+                     "m",
+                     "j",
+                     "h",
+                     "d",
                      "q"]
     while not goodInput:
         response = raw_input("Make a selection: ")

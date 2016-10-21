@@ -2,7 +2,7 @@ from input import *
 
 #Written Steven_Rayno2020
 
-def story(cheat):
+def story(swear, money, joe, harambe):
     if cheat:
         Name1 = getSwear("Enter a Swear! ")
         Mythical1 = getSwear("Enter a Swear! ")
