@@ -19,7 +19,7 @@ def madlibs():
         if option == "q":
             print "Good Bye! "
             end = True
-        elif option == "c":
+        elif option == "s":
             if not swear:
                 swear = True
                 print "SWEAR MODE ACTIVATED"
@@ -55,10 +55,10 @@ def madlibs():
                 dev = False
                 print "If you found this by accident, go find the other four hacks! And if you found all of them already, congrats, you can brag to your friends hwo you found all of the hacks. NOW LEAVE!"
         elif option == "1":
-            print story1.story()
+            print story1.story(swear, money, joe, harambe, dev)
         elif option == "2":
-            print story2.story(cheat)
+            print story2.story(swear, money, joe, harambe, dev)
         elif option == "3":
-            print story3.story()
+            print story3.story(swear, money, joe, harambe, dev)
 
 madlibs()

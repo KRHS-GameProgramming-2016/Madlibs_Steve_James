@@ -2,8 +2,8 @@ from input import *
 
 #Written Steven_Rayno2020
 
-def story(swear, money, joe, harambe):
-    if cheat:
+def story(swear, money, joe, harambe, dev):
+    if swear:
         Name1 = getSwear("Enter a Swear! ")
         Mythical1 = getSwear("Enter a Swear! ")
         Weapon1 = getWeapon("Enter a Medival Weapon! ")

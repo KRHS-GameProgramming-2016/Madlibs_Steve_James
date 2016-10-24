@@ -72,7 +72,7 @@ def getMenuOption():
     goodResponses = ["1",
                      "2",
                      "3",
-                     "c",
+                     "s",
                      "m",
                      "j",
                      "h",
@@ -154,6 +154,20 @@ def getWeapon(prompt):
         if response not in weapons:
             goodInput = False
             print "Medival Weapon only please!"
+            
+    return response
+    
+    
+def getGender(prompt):
+    goodInput = False
+    gender = ["he",
+              "she"]
+    while not goodInput:
+        response = raw_input(prompt)
+        goodInput = True
+        if response not in weapons:
+            goodInput = False
+            print "Please choose (real) a gender!"
             
     return response
 
