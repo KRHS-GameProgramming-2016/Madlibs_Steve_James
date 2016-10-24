@@ -23,23 +23,18 @@ def isSwear(word):
                  "blow",
                  "boner",
                  "bollox",
-                 "bullshit",
                  "butt",
                  "clit",
                  "cooner",
                  "cum",
                  "dumbass",
                  "fag",
-                 "faggot",
                  "gay",
                  "69",
                  "34",
                  "piss",
                  "jizz",
                  "kunt",
-                 "mcfagget",
-                 "feg",
-                 "feggot",
                  "muff",
                  "negro",
                  "nigga",
@@ -52,7 +47,6 @@ def isSwear(word):
                  "splooge",
                  "tard",
                  "testicle",
-                 "tits",
                  "tit",
                  "twats",
                  "taint",
@@ -60,12 +54,11 @@ def isSwear(word):
                  "whore",
                  "wank",
                  "sex",
-                 "sexy",
                  "connar"]
-    if word in swearList:
-        return True
-    else:
-        return False
+    for swear in swearList:
+        if swear in word:
+            return True
+    return False
 
 def getMenuOption():
     goodInput = False
