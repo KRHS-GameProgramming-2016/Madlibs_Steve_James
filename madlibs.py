@@ -12,7 +12,7 @@ def madlibs():
     money = False
     joe = False
     harambe = False
-    dev = False
+    dev = FalseZA
     while not end:
         print menu()
         option = getMenuOption()
